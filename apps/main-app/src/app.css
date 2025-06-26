@@ -1,11 +1,5 @@
 @import 'tailwindcss';
 @import '@some-org/tailwind-theme/theme.css';
 
-/* 
-Tell Tailwind to scan UI package components for classes to generate
-  Without this, classes like bg-brand-600 used in Button.svelte wouldn't be generated 
-*/
-@source '../../../packages/ui/src/lib/*.svelte';
-
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';

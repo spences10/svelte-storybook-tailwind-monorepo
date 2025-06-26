@@ -43,3 +43,15 @@
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
+
+/* 
+Centralized source scanning for all UI packages in the monorepo
+This tells Tailwind where to look for classes to generate across all packages
+*/
+@source '../../*/src/**/*.{svelte,js,ts}';
+/* 
+To use specific paths instead of glob, replace above with individual paths:
+- @source '../../ui/src/lib/';
+- @source '../../design-system/src/components/';
+Add more UI packages here as the monorepo grows 
+*/
