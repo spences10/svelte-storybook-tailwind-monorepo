@@ -112,6 +112,9 @@ importers:
       '@some-org/tailwind-theme':
         specifier: workspace:*
         version: link:../../packages/tailwind-theme
+      '@some-org/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       '@storybook/addon-a11y':
         specifier: ^9.0.13
         version: 9.0.13(storybook@9.0.13(@testing-library/dom@10.4.0)(prettier@3.6.1))
