@@ -1,4 +1,11 @@
 @import 'tailwindcss';
 @import '@some-org/tailwind-theme/theme.css';
+
+/* 
+Tell Tailwind to scan this package's components for classes to generate
+   This ensures UI package components get proper styling during development 
+*/
+@source './lib/**/*.{svelte,js,ts}';
+
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';

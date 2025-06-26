@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "dev:storybook": "pnpm run build:packages && pnpm --filter=storybook storybook",
+    "dev:main-app": "pnpm run build:packages && pnpm --filter=main-app dev",
     "build:storybook": "pnpm run build:packages && pnpm --filter=storybook build-storybook",
     "build:packages": "pnpm -r --filter=\"./packages/*\" run build",
     "format": "pnpm -r --filter=\"./apps/*\" --filter=\"./packages/*\" run format",

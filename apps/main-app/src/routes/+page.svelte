@@ -4,6 +4,10 @@
 
 <h1>Main App - Button Showcase</h1>
 
+<div class="bg-brand-500 text-white p-4 mb-4">
+	<p>This should have a blue background if brand-500 is working</p>
+</div>
+
 <div class="space-y-8 p-8">
 	<section>
 		<h2 class="mb-4 text-2xl font-bold">Primary Buttons</h2>
