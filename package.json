@@ -1,11 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "dev:storybook": "pnpm run build:packages && pnpm --filter=storybook dev",
-    "build:storybook": "pnpm run build:packages && pnpm --filter=storybook build",
-    "preview:storybook": "pnpm run build:packages && pnpm --filter=storybook preview",
-    "test:unit:storybook": "pnpm run build:packages && pnpm --filter=storybook test:unit",
-    "test:e2e:storybook": "pnpm run build:packages && pnpm --filter=storybook test:e2e",
+    "dev:storybook": "pnpm run build:packages && pnpm --filter=storybook storybook",
+    "build:storybook": "pnpm run build:packages && pnpm --filter=storybook build-storybook",
     "build:packages": "pnpm -r --filter=\"./packages/*\" run build",
     "format": "pnpm -r --filter=\"./apps/*\" --filter=\"./packages/*\" run format",
     "lint": "pnpm -r --filter=\"./apps/*\" --filter=\"./packages/*\" run lint",

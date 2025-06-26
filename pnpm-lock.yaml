@@ -103,6 +103,9 @@ importers:
       '@playwright/test':
         specifier: ^1.49.1
         version: 1.53.1
+      '@some-org/tailwind-theme':
+        specifier: workspace:*
+        version: link:../../packages/tailwind-theme
       '@storybook/addon-a11y':
         specifier: ^9.0.13
         version: 9.0.13(storybook@9.0.13(@testing-library/dom@10.4.0)(prettier@3.6.1))
@@ -210,6 +213,9 @@ importers:
       '@playwright/test':
         specifier: ^1.49.1
         version: 1.53.1
+      '@some-org/tailwind-theme':
+        specifier: workspace:*
+        version: link:../tailwind-theme
       '@sveltejs/adapter-auto':
         specifier: ^6.0.0
         version: 6.0.1(@sveltejs/kit@2.22.2(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.34.8)(vite@6.3.5(@types/node@22.15.33)(jiti@2.4.2)(lightningcss@1.30.1)))(svelte@5.34.8)(vite@6.3.5(@types/node@22.15.33)(jiti@2.4.2)(lightningcss@1.30.1)))
