@@ -44,7 +44,7 @@
 </script>
 
 {#snippet template(args: StoryArgs)}
-	<Button {...args}>
+	<Button variant={args.variant} size={args.size} disabled={args.disabled} type={args.type} onclick={args.onclick}>
 		{#snippet children()}{args.label || 'Button'}{/snippet}
 	</Button>
 {/snippet}

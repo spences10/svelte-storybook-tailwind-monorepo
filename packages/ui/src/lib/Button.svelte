@@ -18,13 +18,16 @@
 		...restProps
 	}: Props = $props();
 
-	const baseClasses = 'inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50';
+	const baseClasses =
+		'inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50';
 
 	const variantClasses = {
 		primary: 'bg-brand-600 text-white hover:bg-brand-700 active:bg-brand-800',
 		secondary: 'bg-brand-100 text-brand-900 hover:bg-brand-200 active:bg-brand-300',
-		outline: 'border border-brand-300 bg-transparent text-brand-700 hover:bg-brand-50 hover:text-brand-800 active:bg-brand-100',
-		ghost: 'bg-transparent text-brand-700 hover:bg-brand-100 hover:text-brand-800 active:bg-brand-200',
+		outline:
+			'border border-brand-300 bg-transparent text-brand-700 hover:bg-brand-50 hover:text-brand-800 active:bg-brand-100',
+		ghost:
+			'bg-transparent text-brand-700 hover:bg-brand-100 hover:text-brand-800 active:bg-brand-200',
 		destructive: 'bg-red-600 text-white hover:bg-red-700 active:bg-red-800'
 	};
 
@@ -34,7 +37,7 @@
 		lg: 'h-11 px-8 rounded-lg text-lg'
 	};
 
-	const classes = `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]}`;
+	const classes = $derived(`${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]}`);
 </script>
 
 <button {type} {disabled} {onclick} class={classes} {...restProps}>
