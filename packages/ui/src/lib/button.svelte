@@ -18,10 +18,10 @@
 		...restProps
 	}: Props = $props();
 
-	const baseClasses =
+	const base_classes =
 		'inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50';
 
-	const variantClasses = {
+	const variant_classes = {
 		primary: 'bg-brand-600 text-white hover:bg-brand-700 active:bg-brand-800',
 		secondary: 'bg-brand-100 text-brand-900 hover:bg-brand-200 active:bg-brand-300',
 		outline:
@@ -31,13 +31,13 @@
 		destructive: 'bg-red-600 text-white hover:bg-red-700 active:bg-red-800'
 	};
 
-	const sizeClasses = {
+	const size_classes = {
 		sm: 'h-9 px-3 text-sm rounded-md',
 		md: 'h-10 px-4 py-2 rounded-lg',
 		lg: 'h-11 px-8 rounded-lg text-lg'
 	};
 
-	const classes = $derived(`${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]}`);
+	const classes = $derived(`${base_classes} ${variant_classes[variant]} ${size_classes[size]}`);
 </script>
 
 <button {type} {disabled} {onclick} class={classes} {...restProps}>
