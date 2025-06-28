@@ -49,6 +49,13 @@ Centralized source scanning for all UI packages in the monorepo
 This tells Tailwind where to look for classes to generate across all packages
 */
 @source '../../*/src/**/*.{svelte,js,ts}';
+
+/* Exclude test and config files for better performance */
+@source not '../../*/src/**/*.test.{js,ts}';
+@source not '../../*/src/**/*.spec.{js,ts}';
+@source not '../../*/src/**/*.config.{js,ts}';
+@source not '../../*/src/**/*.d.ts';
+
 /* 
 To use specific paths instead of glob, replace above with individual paths:
 - @source '../../ui/src/lib/';
